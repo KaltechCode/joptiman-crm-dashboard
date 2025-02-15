@@ -44,7 +44,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   padding: 20px 60px;
   font-family: Poppins;
 }
@@ -55,6 +55,7 @@
   display: flex;
   margin: auto;
   gap: 80px;
+  border-radius: 8px;
 }
 
 .registerForm_firstBox {
@@ -64,7 +65,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  overflow: hidden;
+
 
 }
 
@@ -205,4 +206,31 @@ button[type="button"] {
 
 button[type="button"]:focus {
   outline: none;
+}
+
+
+
+/* Responsive layouts */
+
+@media (max-width: 767px ) {
+  .registerForm_secondBox {
+    display: none;
+  }
+.registerForm__mianWrapper {
+  padding: 20px;
+}
+.flip-card-back {
+  padding: 30px;
+}
+.registerForm_btn_login{
+  margin-top: 400px;
+}
+
+.registerForm__mianWrapper{
+  height: 120vh;
+}
+.registerForm_firstBbox_heading h1{
+  font-size: 30px;
+}
+
 }
