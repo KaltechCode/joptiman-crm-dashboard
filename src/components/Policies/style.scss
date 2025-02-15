@@ -1,0 +1,77 @@
+.css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root {
+    height: 5vh;
+    width: 244px;
+}
+
+
+
+.MuiGrid-root {
+    .MuiGrid-item {
+        .MuiGrid-grid-md-8 {
+            .css-am41oj-MuiGrid-root {
+                canvas {
+                    height: 284px;
+                    width: 731px;
+                }
+            }
+        }
+    }
+}
+
+.policies-container{
+
+    width: 80.5%;
+    margin-left: 18.5% ;
+    @media (max-width:1024px) {
+        width: 68.8%;
+        margin-left: 29.5% 
+    }
+
+}
+
+// .input-label{
+//     display:block;
+// }
+// .text-field{
+//     width:30%;
+//     height:30px;
+// }
+.details-heading{
+    text-align:left;
+    font-size:14px !important;
+    color:#003478;
+    font-weight: 600 !important;
+    margin-top: 8px !important;
+}
+
+.Policy-textfield{
+    .input-label{
+        font-size: 14px;
+    }
+    .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root{
+        width:200px;
+        background-color:white
+    }
+    .css-1v4ccyo{
+        width:200px;
+        background-color:white
+    }
+    .css-1x5jdmq{
+        height: 0px !important;
+    }
+    .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+        height: 0px !important;
+    }
+}
+
+.policyDetails{
+    .css-ahj2mt-MuiTypography-root{
+        color:black;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+.css-14x1nlk {
+    transform: translate(12px, 7px) scale(0.75) !important;
+}

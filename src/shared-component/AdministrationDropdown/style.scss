@@ -1,0 +1,21 @@
+    .options-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 52%;
+
+        @media (max-width:'1024px') {
+            width: 70%;
+
+        }
+
+        .options {
+            width: 81%;
+            border-radius: 4px;
+            border: 2px solid black;
+
+            @media (max-width:'1024px') {
+                width: 100%;
+            }
+        }
+    }

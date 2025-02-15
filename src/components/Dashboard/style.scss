@@ -1,0 +1,234 @@
+.grid-inner-container {
+    display: 'flex';
+    align-items: center;
+    background-color: white;
+    height: 80%;
+    border-radius: 10px;
+    height: 10vh;
+    margin-top: 10px;
+
+    .list-items {
+        padding-top: 0px;
+
+        .list-item-container {
+            display: flex;
+            flex-direction: row;
+            @media (max-width:1024px){
+                flex-direction: column;
+            }
+            .list-items-text {
+                color: #003478
+            }
+        }
+    }
+
+    .css-1p823my-MuiListItem-root {
+        height: 31px;
+
+        @media (max-width:1366px) and (min-width: 1200px) {
+            height: 24px;
+        }
+        @media (max-width:1024px) {
+            height: 48px;
+        }
+
+
+    }
+}
+
+// .BarChart{
+//     width:833px;
+//     height:100px;
+// }
+
+// .canvas{
+//     width:4000px;
+//     height:294px;
+// }
+
+
+
+// .CRM_dropdown{
+.MuiAutocomplete-hasPopupIcon.css-1wuilmg-MuiAutocomplete-root .MuiOutlinedInput-root {
+    height: 36px;
+    // margin:-10px;
+    margin-left: 1px;
+    background-color: #003478;
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.css-1glvl0p-MuiButtonBase-root-MuiIconButton-root-MuiAutocomplete-clearIndicator {
+    display: none;
+}
+
+
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 0px;
+    margin-left: 277px;
+
+    @media (max-width:1366px) {
+        margin-left: 228px;
+    }
+
+    @media (max-width:1024px) {
+        margin-left: 289px;
+    }
+
+
+}
+
+
+.first-grid {
+    background-color: #EDEDED;
+    height: 19vh;
+    width: 95%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 15px;
+
+    @media (max-width:1366px) and (min-width: 1200px) {
+        width: 98%;
+        // border: 2px solid green
+    }
+}
+
+.second-grid {
+    height: 47vh;
+    width: 95%;
+    direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 15px;
+
+    @media (max-width:1366px) and (min-width: 1200px) {
+        width: 98%;
+        height: 43vh;
+        // border: 2px solid green;
+    }
+
+    .dropdown-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .barChart-container{
+        height: 37vh;
+        width:91%;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+        border-radius: 15px;
+
+        @media (max-width:1024px) {
+            justify-content: center;
+        }
+
+        .yearly-data-container{
+            height: 30vh;
+            flex-direction: column;
+            align-content: space-between;
+            @media (max-width:1024px) {
+                height: 14vh;    
+            }
+        }
+    }
+}
+
+.third-grid {
+    background-color: #EDEDED;
+    height: 23vh;
+    width: 95%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 15px;
+
+
+    @media (max-width:1366px) and (min-width: 1200px) {
+        width: 98%;
+        // border: 2px solid green
+    }
+
+    .agent-container{
+        display: flex;
+        flex-direction: row;
+        // border: 2px solid red;
+        @media (max-width:1024px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .agent-text{
+        font-size: 14px;
+        font-weight: bold;
+        // color:red
+        // width: 46%
+        @media (max-width:1024px) {
+            font-size: 15px;
+        }
+    }
+
+    .agent-text-value{
+        font-size: 12px;
+        @media (max-width:1024px) {
+            font-size: 13px;
+        }
+    }
+
+    // #agent-title{
+    //     font-size: 13px;
+    //     font-weight: bold;
+    //     // width: 43%;
+    //     @media (max-width:1024px) {
+    //         // width: 38%
+    //     }
+       
+    // }
+}
+
+.profilePic-dashboard {
+    width: 103px;
+    height: 103px;
+    border-radius: 17px;
+
+    @media (max-width:1366px) and (min-width: 1200px) {
+        width: 74px;
+        height: 74px;
+    }
+}
+
+.avatar-dashboard {
+    .css-17o22dy-MuiAvatar-root {
+        width: 103px;
+        height: 103px;
+        border-radius: 17px;
+
+        @media (max-width:1366px) and (min-width: 1200px) {
+
+            width: 74px !important;
+            height: 74px !important;
+        }
+    }
+
+    .css-1llrwy8 {
+        width: 103px;
+        height: 103px;
+        border-radius: 17px;
+
+        @media (max-width:1366px) and (min-width: 1200px) {
+
+            width: 74px !important;
+            height: 74px !important;
+        }
+    }
+}

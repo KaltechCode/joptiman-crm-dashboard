@@ -1,0 +1,32 @@
+.tutorials-container {
+    width: 81.7% !important;
+    margin-left: 18% !important;
+    align-items: center;
+    justify-content: space-around;
+ 
+    @media (max-width: 1024px) {
+       width:100% !important;
+       margin-left:0px !important;
+    }
+
+    .tutorials-inner-container{
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: space-between;
+        
+        width: 85%;
+        height: 80%;
+        overflow-y: auto;
+
+        .video-container{
+            width: 31%;
+            height: 46%;
+
+            .video-title{
+                font-weight: 600;
+                color:#003478;
+            }
+        }
+    }
+} 

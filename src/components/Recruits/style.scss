@@ -1,0 +1,124 @@
+.recruitsGrid {
+   .css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+      border-radius: 0px !important;
+      width: 97% !important;
+      height: 64vh;
+
+      .css-15wwp11-MuiTableHead-root {
+         height: 0px !important;
+      }
+
+      .css-y8ay40-MuiTableCell-root {
+         background-color: white !important;
+         border: 0px !important;
+      }
+
+      .css-1ex1afd-MuiTableCell-root {
+         background-color: #D9D9D9;
+         border-bottom: 28px solid white !important;
+         //   .profilePicCell{
+         //    background-color: white !important;
+         //   }
+      }
+
+      .profilePicCell {
+         background-color: white !important;
+      }
+   }
+
+   //For deployment
+   .css-13xy2my {
+      border-radius: 0px !important;
+      width: 97% !important;
+      height: 64vh;
+
+      .css-1wbz3t9 {
+         height: 0px !important;
+      }
+
+      .css-8coetn {
+         background-color: white !important;
+         border: 0px !important;
+      }
+
+      .css-q34dxg {
+         background-color: #D9D9D9;
+         border-bottom: 28px solid white !important;
+      }
+   }
+
+}
+
+.form-questions {
+   font-size: 17px !important;
+   font-weight: bold !important;
+   color: rgb(0 0 0 / 67%);
+}
+
+.text-field-container {
+   justify-content: space-between;
+   width: 65%;
+
+   .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+      height: 10px !important;
+   }
+
+   .css-1x5jdmq {
+      height: 10px !important;
+   }
+
+   .text-field {
+
+      .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+         height: 45px;
+         width: 345px;
+      }
+
+      .MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-srn6bb-MuiAutocomplete-root .MuiOutlinedInput-root {
+         height: 44px;
+      }
+
+      .css-154xyx0-MuiInputBase-root-MuiOutlinedInput-root {
+         height: 6vh;
+      }
+
+      //For deployment
+      .css-1v4ccyo {
+         height: 45px;
+         width: 345px;
+      }
+
+      .css-segi59 {
+         height: 6vh;
+      }
+   }
+}
+
+
+.css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input {
+   height: 0px !important;
+}
+
+
+//For deployment search field
+.css-1ufn0jl {
+   height: 5vh;
+}
+
+.css-1x5jdmq {
+   height: 0px !important;
+}
+
+
+
+
+
+
+
+// .text-field{
+
+//    .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root{
+//       height:45px;
+//       width:345px;
+//    }
+// }

@@ -1,0 +1,79 @@
+.DateField {
+    .css-1q6at85-MuiInputBase-root-MuiOutlinedInput-root {
+        height: 5vh;
+        width: 187px;
+    }
+}
+
+
+.css-1jdq69z-MuiFormControl-root-MuiTextField-root {
+    width: 187px;
+}
+
+.css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+    height: 4vh;
+    width: 104px;
+}
+
+.css-e4w4as-MuiFormLabel-root-MuiInputLabel-root {
+    transform: translate(12px, 7px) scale(0.75) !important;
+}
+
+.css-14x1nlk {
+    transform: translate(12px, 7px) scale(0.75) !important;
+}
+
+.statement-container {
+    width: 80.8%;
+    margin-left: 18%;
+
+    @media (max-width:1024px) {
+        width: 68% !important;
+        margin-left: 29% !important;
+    }
+
+    .statement-top-bar {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 95%;
+
+        .searchbox-button-container {
+            width: 21%;
+            height: 12vh;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @media (max-width:1024px) {
+                width: 37%;
+                height: 7vh;
+            }
+
+            .textfield{
+                width: 245px; 
+                height: 5vh;
+
+                @media (max-width:1024px) {
+                    height: 3vh;
+                }
+            }
+
+            .button {
+                color: white;
+                width: 245px;
+                height: 5vh;
+                font-size: 12px;
+
+                &:hover {
+                    background-color: '#F08613',
+                }
+
+                @media (max-width:1024px) {
+                    height: 3vh;
+                }
+            }
+        }
+
+    }
+}

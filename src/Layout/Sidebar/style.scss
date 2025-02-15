@@ -1,0 +1,45 @@
+.side-bar-container {
+    position: fixed;
+    top: 52px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    width: 18%;
+    height: 124%;
+    background-color: #003478;
+    z-index: 5;
+
+    @media (max-width:1024px) {
+        width: 28% !important
+    }
+
+    .listItem {
+        padding-top: 5px;
+    }
+
+    .list-item-text {
+        .css-10hburv-MuiTypography-root {
+            @media (max-width:1024px) {
+                font-size: 21px !important;
+            }
+        }
+    }
+
+    .list-item-icon1 img {
+            @media (max-width:1024px) {
+                height: 20px !important;
+            }
+    }
+
+
+    .list-item-icon img {
+        /* Your styles for the images inside listIcon */
+        padding-left: 45px;
+
+        @media (max-width:1024px) {
+            height: 22px !important;
+        }
+    }
+
+
+}

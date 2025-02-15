@@ -1,0 +1,74 @@
+.css-1xgnz6y-MuiStack-root {
+    overflow: hidden !important;
+    padding-top: 0px !important;
+}
+
+//For deployment
+.css-eb89ea {
+    overflow: hidden !important;
+    padding-top: 0px !important;
+}
+
+.css-1xgnz6y-MuiStack-root>.MuiTextField-root,
+.css-1xgnz6y-MuiStack-root>.MuiPickersTextField-root {
+    width: 196px;
+    height: 30px;
+    background-color: white;
+
+    .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+        height: 30px;
+        font-size: 14px;
+        min-width: 190px !important;
+
+        .css-i4bv87-MuiSvgIcon-root {
+            height: 17px;
+        }
+    }
+}
+
+//For deployment
+.css-eb89ea>.MuiTextField-root,
+.css-eb89ea>.MuiPickersTextField-root {
+    width: 196px;
+    height: 30px;
+    background-color: white;
+
+    .css-1bn53lx {
+        height: 30px;
+        font-size: 14px;
+        min-width: 190px !important;
+
+        .css-vubbuv {
+            height: 17px !important;
+        }
+    }
+}
+
+
+.addNewPolicyTextField {
+
+    .css-1xgnz6y-MuiStack-root>.MuiTextField-root, .css-1xgnz6y-MuiStack-root>.MuiPickersTextField-root {
+        width: 294px;
+        height: 60px;
+        background-color: rgb(0 0 0 / 8%);
+
+        .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root {
+            height: 60px;
+        }
+    }
+
+    //For Deployment
+    .css-eb89ea>.MuiTextField-root, .css-eb89ea>.MuiPickersTextField-root {
+        width: 294px;
+        height: 60px;
+        background-color: rgb(0 0 0 / 8%);
+
+        .css-1bn53lx {
+            height: 60px;
+        }
+    }
+}
+
+.css-1rtg91x-MuiDateCalendar-root {
+    width: 293px;
+}

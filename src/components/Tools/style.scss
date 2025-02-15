@@ -1,0 +1,21 @@
+.tools-container{
+    width:81.7%;
+    height:90vh;
+    margin-left:  18%;
+    @media (max-width:1024px) {
+        height: 95.6vh;
+        margin-left: 28%;
+    }
+    .image-container{
+        justify-content: flex-end;
+        width: 44%;
+        height: 81.7vh;
+        position: fixed;
+        right:0px;
+
+        @media (max-width:1024px) {
+            width:50%;
+            height: 90.7vh;
+        }
+    }
+}
