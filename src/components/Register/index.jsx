@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import "./SteperFormSection.css";
-import JOptimanLogo3d from "../../assets/JOptimanlogo.webp";
+import JOptimanLogo3d from "../../assets/JOptimanlogo.png";
 import httpClient from "../../_util/api";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -95,8 +95,8 @@ const Register = () => {
   };
 
   const loginHandler = async (event) => {
-  event.preventDefault(); // Prevents default form submission behavior
-    
+    event.preventDefault(); // Prevents default form submission behavior
+
     dispatch(showLoader());
     const res = await httpClient
       .post("/user/login", userCredentials)
@@ -179,7 +179,7 @@ const Register = () => {
               <div className="registerForm_firstBbox_heading">
                 <h1>Agent Login</h1>
                 <p>
-                  Don’t have a Joptiman  account?{" "}
+                  Don’t have a Joptiman account?{" "}
                   <button type="button" onClick={() => setIsFlipped(false)}>
                     <span style={{ color: "#F78B2B" }}>Register Here*</span>
                   </button>
@@ -217,10 +217,7 @@ const Register = () => {
                     />
                   </div>
                 </div>
-                <button
-                  className="registerForm_btn_login"
-              type="submit"
-                >
+                <button className="registerForm_btn_login" type="submit">
                   Login
                 </button>
               </form>
