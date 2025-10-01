@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.762486d9.css",
-    "main.js": "/static/js/main.7bba0a91.js",
+    "main.css": "/static/css/main.35186180.css",
+    "main.js": "/static/js/main.3335c043.js",
     "static/js/787.980d3cc0.chunk.js": "/static/js/787.980d3cc0.chunk.js",
-    "static/media/landingPageImg.svg": "/static/media/landingPageImg.12c03f989a501ee21c8735d6c1f211b1.svg",
+    "static/media/landingPageImg.svg": "/static/media/landingPageImg.5a4e6ce96836da89f55b3f4f7052b8b2.svg",
     "static/media/Carrier2.png": "/static/media/Carrier2.5f7aca8f1cc0faea52be.png",
-    "static/media/JOptimanLogo-Large.png": "/static/media/JOptimanLogo-Large.be7f891172b69bf84438.png",
     "static/media/Symetra.png": "/static/media/Symetra.80d8245fb1abcd134e09.png",
     "static/media/carrier9.png": "/static/media/carrier9.81daa1621031e4223de6.png",
     "static/media/Carrier 6.png": "/static/media/Carrier 6.5cb4046981bb97d29e5c.png",
@@ -14,10 +13,12 @@
     "static/media/NationalLifePic.png": "/static/media/NationalLifePic.87f0cc7da23065c89d3b.png",
     "static/media/Carrier1.png": "/static/media/Carrier1.e46aa32eb2db8c0fbd39.png",
     "static/media/AmericanGeneralLife.png": "/static/media/AmericanGeneralLife.cb90518b6ae7e67c9fe0.png",
+    "static/media/JOptimanlogo.png": "/static/media/JOptimanlogo.90cb03a4aa30be7caefc.png",
     "static/media/UnitedAmericanPic.png": "/static/media/UnitedAmericanPic.f3aa1e1c565fe28651cb.png",
     "static/media/LSPNPic.png": "/static/media/LSPNPic.47562a690cf75e68147b.png",
     "static/media/Lincoln National.png": "/static/media/Lincoln National.74cd0cbbc15b0cf307fb.png",
     "static/media/Fidelity & Guaranty Life.png": "/static/media/Fidelity & Guaranty Life.ce97126aa7f4da38b16b.png",
+    "static/media/JOptimanLogo-Large.png": "/static/media/JOptimanLogo-Large.12ccabff8e3971f7fcc9.png",
     "static/media/Carrier5.png": "/static/media/Carrier5.26669356965caabd04e1.png",
     "static/media/DeptmericaPic.png": "/static/media/DeptmericaPic.dfb48ac0f993093a6fa5.png",
     "static/media/United HealthCare.png": "/static/media/United HealthCare.4d55e3322c81a3c62fcd.png",
@@ -26,12 +27,12 @@
     "static/media/PrudentialPic.png": "/static/media/PrudentialPic.02b1dbe943d8931b77e3.png",
     "static/media/Carrier 7.png": "/static/media/Carrier 7.166d0698e9957f6b43cc.png",
     "index.html": "/index.html",
-    "main.762486d9.css.map": "/static/css/main.762486d9.css.map",
-    "main.7bba0a91.js.map": "/static/js/main.7bba0a91.js.map",
+    "main.35186180.css.map": "/static/css/main.35186180.css.map",
+    "main.3335c043.js.map": "/static/js/main.3335c043.js.map",
     "787.980d3cc0.chunk.js.map": "/static/js/787.980d3cc0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.762486d9.css",
-    "static/js/main.7bba0a91.js"
+    "static/css/main.35186180.css",
+    "static/js/main.3335c043.js"
   ]
 }

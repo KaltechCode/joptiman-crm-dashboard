@@ -187,7 +187,7 @@ const Administration = () => {
     <>
       <PageLoader />
       <Header />
-      <div style={{ marginTop: "56px" }}>
+      <div style={{ marginTop: "50px", paddingTop: "70px" }}>
         <div
           style={{
             display: "flex",
@@ -198,7 +198,14 @@ const Administration = () => {
           <SideBar />
 
           <Stack className="administration-container">
-            <h2 style={{ color: "black", textAlign: "center" }}>
+            <h2
+              style={{
+                color: "black",
+                textAlign: "center",
+                fontSize: 24,
+                fontWeight: 700,
+              }}
+            >
               Administration
             </h2>
             <Stack flexDirection={"row"}>
@@ -219,17 +226,21 @@ const Administration = () => {
                           e.stopPropagation();
                         }}
                         sx={{
-                          backgroundColor: "#003478",
-                          color: "white",
-                          height: "36px",
-                          width: "267px",
+                          width: "50% !important",
+                          backgroundColor: "#0c0544 !important",
+                          borderRadius: "5px",
+                          color: "#F89520 !important",
+                          width: "50% !important",
                           fontSize: "12px",
                           padding: "3px",
                           marginTop: "4px",
-                          borderTopLeftRadius: "0",
-                          borderBottomLeftRadius: "0",
+                          textTransform: "capitalize",
+
+                          padding: "7px 15px !important",
+                          justifyContent: "flex-start",
                           "&:hover": {
-                            backgroundColor: "#003478",
+                            backgroundColor: "#1D9EB0 !important",
+                            color: "#ffffff !important",
                           },
                         }}
                       >
@@ -242,17 +253,20 @@ const Administration = () => {
                           aria-haspopup="true"
                           onClick={handleShowOfficeGrid}
                           sx={{
-                            backgroundColor: "#003478",
-                            color: "white",
-                            height: "36px",
-                            width: "267px",
+                            // backgroundColor: "#003478",
+                            backgroundColor: "#0c0544 !important",
+                            color: "#F89520 !important",
                             fontSize: "12px",
-                            padding: "3px",
+                            padding: "7px 15px !important",
                             marginTop: "4px",
-                            borderTopLeftRadius: "0",
-                            borderBottomLeftRadius: "0",
+                            borderRadius: "5px",
+                            width: "50% !important",
+                            justifyContent: "flex-start",
+                            textTransform: "capitalize",
+
                             "&:hover": {
-                              backgroundColor: "#003478",
+                              backgroundColor: "#1D9EB0 !important",
+                              color: "#ffffff !important",
                             },
                           }}
                         >
@@ -296,7 +310,12 @@ const Administration = () => {
               </Stack>
 
               <Stack className="image-inner-container">
-                <img src={JOptimanLogo} width={"100%"} height={"85%"} />
+                <img
+                  src={JOptimanLogo}
+                  width={"65%"}
+                  height={"65%"}
+                  className="image-opacity"
+                />
               </Stack>
             </Stack>
           </Stack>

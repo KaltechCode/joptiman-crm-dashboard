@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import "./SteperFormSection.css";
 import JOptimanLogo3d from "../../assets/JOptimanlogo.png";
 import httpClient from "../../_util/api";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import CustomizedSnackbars from "../../shared-component/Snackbar/SnackBar";
 import {
@@ -180,9 +180,13 @@ const Register = () => {
                 <h1>Agent Login</h1>
                 <p>
                   Don’t have a Joptiman account?{" "}
-                  <button type="button" onClick={() => setIsFlipped(false)}>
+                  <Link
+                    to="https://portal.joptimanconsultancy.com/addNewRecruit"
+                    type="button"
+                    onClick={() => setIsFlipped(false)}
+                  >
                     <span style={{ color: "#F78B2B" }}>Register Here*</span>
-                  </button>
+                  </Link>
                 </p>
               </div>
 
@@ -224,7 +228,7 @@ const Register = () => {
             </div>
 
             {/* Registration Front Side */}
-            <div className="flip-card-front">
+            {/* <div className="flip-card-front">
               <div className="registerForm_firstBbox_heading">
                 <h1>Agent Registration</h1>
                 <p>
@@ -327,7 +331,7 @@ const Register = () => {
                 </div>
                 <button className="registerForm_btn">Next</button>
               </form>
-            </div>
+            </div> */}
           </div>
         </div>
 

@@ -2,7 +2,7 @@ import { AppBar, Divider, Stack, Toolbar } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import Profile from "./Profile";
 import Notifications from "./Notification/Notifications";
-import Logo from "./Logo";
+import Logo from "../../assets/JOptimanlogo.png";
 import httpClient from "../../_util/api";
 import ToggleSidebar from "./ToogleSidebar";
 
@@ -58,8 +58,11 @@ const Header = () => {
     <div>
       <AppBar
         sx={{
-          backgroundColor: "#000000",
+          backgroundColor: "#0c0544",
+          // backgroundColor: "#000000",
           //  border: '2px solid red'
+          paddingTop: "5px",
+          paddingBottom: "5px",
         }}
       >
         <Toolbar>
@@ -83,14 +86,18 @@ const Header = () => {
                 flexDirection={"row"}
                 justifyContent={"space-between"}
                 alignItems={"center"}
-                sx={{ width: "9%" }}
+                sx={{ width: "15%" }}
               >
-                <ToggleSidebar />
-                <div>
+                {/* <ToggleSidebar /> */}
+                <div className="w-44 h-auto" style={{ paddingLeft: "12px" }}>
                   <img
-                    alt="JOptiman logo"
-                    src="../../assets/JOptimanlogo.png"
-                    className="h-auto w-44"
+                    src={Logo}
+                    alt="Joptiman Logo"
+                    style={
+                      {
+                        // objectFit: "contain",
+                      }
+                    }
                   />
                 </div>
               </Stack>

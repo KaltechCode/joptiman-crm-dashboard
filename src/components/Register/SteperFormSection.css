@@ -26,15 +26,14 @@
   left: 0;
 }
 
-.flip-card-front{
-    background-color: white;
-} 
+.flip-card-front {
+  background-color: white;
+}
 
 .flip-card-back {
   transform: rotateY(180deg);
   background-color: white;
   padding: 60px;
-
 }
 
 /* Existing Styles with Updates */
@@ -44,7 +43,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 110vh;
+  height: 100vh;
   padding: 20px 60px;
   font-family: Poppins;
 }
@@ -54,7 +53,7 @@
   height: 100%;
   display: flex;
   margin: auto;
-  gap: 80px;
+  gap: 10%;
   border-radius: 8px;
 }
 
@@ -65,8 +64,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-
-
 }
 
 .registerForm_firstBbox_heading h1 {
@@ -98,12 +95,12 @@
   cursor: pointer;
 }
 
-.registerForm_btn_login{
-    width: 100%;
-    height: 53px;
-    margin-top: 450px;
-      background-color: #060642;
-       color: white;
+.registerForm_btn_login {
+  width: 100%;
+  height: 53px;
+  margin-top: 20%;
+  background-color: #060642;
+  color: white;
   padding: 8px 16px;
   border-radius: 8px;
   cursor: pointer;
@@ -201,36 +198,33 @@ button[type="button"] {
   padding: 0;
   font: inherit;
   cursor: pointer;
-  color: #F78B2B;
+  color: #f78b2b;
 }
 
 button[type="button"]:focus {
   outline: none;
 }
 
-
-
 /* Responsive layouts */
 
-@media (max-width: 767px ) {
+@media (max-width: 767px) {
   .registerForm_secondBox {
     display: none;
   }
-.registerForm__mianWrapper {
-  padding: 20px;
-}
-.flip-card-back {
-  padding: 30px;
-}
-.registerForm_btn_login{
-  margin-top: 400px;
-}
+  .registerForm__mianWrapper {
+    padding: 20px;
+  }
+  .flip-card-back {
+    padding: 30px;
+  }
+  .registerForm_btn_login {
+    margin-top: 400px;
+  }
 
-.registerForm__mianWrapper{
-  height: 120vh;
-}
-.registerForm_firstBbox_heading h1{
-  font-size: 30px;
-}
-
+  .registerForm__mianWrapper {
+    height: 120vh;
+  }
+  .registerForm_firstBbox_heading h1 {
+    font-size: 30px;
+  }
 }
