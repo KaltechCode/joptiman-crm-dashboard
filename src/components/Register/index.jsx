@@ -29,6 +29,8 @@ const Register = () => {
     OTP: "",
   });
 
+  // handerles
+
   const handleInputChange = (data, field) => {
     setUserCredentials((prevFormData) => ({ ...prevFormData, [field]: data }));
   };
@@ -168,23 +170,24 @@ const Register = () => {
     }
   };
 
+  // urls
+
+  const registerUrl =
+    "https://link.joptimanconsultancy.com/widget/form/ziWPHtzQiDL1oa5rlRcu";
+
   return (
     <div className="registerForm__mianWrapper">
       <div className="registerForm_Container">
         {/* Flip Card Container */}
         <div className="registerForm_firstBox">
-          <div className={`flip-card-inner ${isFlipped ? "flipped" : ""}`}>
+          <div className={`form-inner-container`}>
             {/* Login Back Side */}
             <div className="flip-card-back">
               <div className="registerForm_firstBbox_heading">
                 <h1>Agent Login</h1>
                 <p>
                   Don’t have a Joptiman account?{" "}
-                  <Link
-                    to="https://portal.joptimanconsultancy.com/addNewRecruit"
-                    type="button"
-                    onClick={() => setIsFlipped(false)}
-                  >
+                  <Link to={registerUrl} onClick={() => setIsFlipped(false)}>
                     <span style={{ color: "#F78B2B" }}>Register Here*</span>
                   </Link>
                 </p>
@@ -225,6 +228,19 @@ const Register = () => {
                   Login
                 </button>
               </form>
+
+              <div>
+                <Link
+                  to="/forget-password"
+                  style={{
+                    textDecoration: "none",
+                    color: "#F78B2B",
+                    marginTop: "10px",
+                  }}
+                >
+                  Forgot Your Password?
+                </Link>
+              </div>
             </div>
 
             {/* Registration Front Side */}
