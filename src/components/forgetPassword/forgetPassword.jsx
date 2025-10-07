@@ -119,9 +119,8 @@ const ForgetPassword = () => {
               <div
                 style={{
                   width: "100%",
-                  display: isForgetPassword ? "flex" : "none",
+                  display: isForgetPassword && !isVerifyOTP ? "flex" : "none",
                   marginTop: "30px",
-                  display: "flex",
                   flexDirection: "column",
                   gap: 5,
                 }}
@@ -191,7 +190,7 @@ const ForgetPassword = () => {
                     id="otp-input"
                     placeholder="OTP"
                     variant="outlined"
-                    sx={{ width: "100%" }}
+                    sx={{}}
                     onChange={(e) => handleInputChange(e.target.value, "OTP")}
                   />
                 </Stack>
@@ -206,7 +205,7 @@ const ForgetPassword = () => {
                     id="password-input"
                     placeholder="Password"
                     variant="outlined"
-                    sx={{ width: "100%" }}
+                    sx={{}}
                     type="password"
                     onChange={(e) =>
                       handleInputChange(e.target.value, "password")
@@ -216,18 +215,41 @@ const ForgetPassword = () => {
 
                 <LoadingButton
                   variant="contained"
-                  sx={{
-                    backgroundColor: "#F08613",
+                  style={{
+                    backgroundColor: "#0c0544",
                     color: "white",
                     width: "100%",
                     height: "42px",
                     fontSize: "12px",
-                    "&:hover": { backgroundColor: "#F08613" },
+                    borderRadius: 5,
+                    transition: ".5s",
+                    marginTop: "10px",
+                    cursor: "pointer",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.backgroundColor = "#F08613";
+                    e.currentTarget.style.color = "#fff";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.backgroundColor = "#0c0544";
+                    e.currentTarget.style.color = "white";
                   }}
                   onClick={verifyOTPHandler}
                 >
                   Verify OTP
                 </LoadingButton>
+                <div>
+                  <Link
+                    to="/"
+                    style={{
+                      textDecoration: "none",
+                      color: "#F78B2B",
+                      marginTop: "10px",
+                    }}
+                  >
+                    Back to Login
+                  </Link>
+                </div>
               </Stack>
             </Stack>
           </Stack>
