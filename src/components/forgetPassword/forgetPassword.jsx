@@ -6,11 +6,12 @@ import CustomizedSnackbars from "../../shared-component/Snackbar/SnackBar";
 import { hideLoader, showLoader } from "../../Store/mainSlice";
 import LoadingButton from "@mui/lab/LoadingButton";
 import JOptimanLogo3d from "../../assets/JOptimanlogo.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const ForgetPassword = () => {
   const snackbar_Ref = useRef(null);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const [isForgetPassword, setIsForgetPassword] = useState(true);
   const [isVerifyOTP, setIsVerifyOTP] = useState(false);
@@ -77,6 +78,7 @@ const ForgetPassword = () => {
         "",
         "i-chk-circle"
       );
+      navigate("/");
       setIsVerifyOTP(false);
     }
   };
@@ -110,6 +112,7 @@ const ForgetPassword = () => {
                 <Link
                   to={registerUrl}
                   //   onClick={() => setIsFlipped(false)}
+                  target="_blank"
                 >
                   <span style={{ color: "#F78B2B" }}>Register Here*</span>
                 </Link>
@@ -170,6 +173,19 @@ const ForgetPassword = () => {
                 >
                   Next
                 </button>
+
+                <div>
+                  <Link
+                    to="/"
+                    style={{
+                      textDecoration: "none",
+                      color: "#F78B2B",
+                      marginTop: "10px",
+                    }}
+                  >
+                    Back to Login
+                  </Link>
+                </div>
               </div>
 
               {/* Step 2: Enter OTP and New Password */}
@@ -191,7 +207,7 @@ const ForgetPassword = () => {
                     placeholder="OTP"
                     variant="outlined"
                     sx={{}}
-                    onChange={(e) => handleInputChange(e.target.value, "OTP")}
+                    onChange={(e) => handleInputChange(e.target.value, "otp")}
                   />
                 </Stack>
 

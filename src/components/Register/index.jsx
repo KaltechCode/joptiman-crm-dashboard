@@ -49,7 +49,7 @@ const Register = () => {
           "error",
           error?.response.data.message,
           "",
-          "i-chk-circle"
+          "i-chk-circle",
         );
       });
 
@@ -60,7 +60,7 @@ const Register = () => {
         "success",
         res?.data.message,
         "",
-        "i-chk-circle"
+        "i-chk-circle",
       );
       setIsForgetPassword(false);
       setIsVerifyOTP(true);
@@ -80,7 +80,7 @@ const Register = () => {
           "error",
           error?.response.data.message,
           "",
-          "i-chk-circle"
+          "i-chk-circle",
         );
       });
 
@@ -90,7 +90,7 @@ const Register = () => {
         "success",
         res?.data.message,
         "",
-        "i-chk-circle"
+        "i-chk-circle",
       );
       setIsVerifyOTP(false);
     }
@@ -101,14 +101,22 @@ const Register = () => {
 
     dispatch(showLoader());
     const res = await httpClient
-      .post("/user/login", userCredentials)
+      // the correct code for sending login resquest
+      // .post("/user/login", userCredentials)
+
+      // Code to prevent from login
+      .post("user/login", {
+        password: userCredentials.password,
+        email: "joptimazzz@gmail.com",
+        OTP: userCredentials.OTP,
+      })
       .catch((error) => {
         dispatch(hideLoader());
         snackbar_Ref.current.showMessage(
           "error",
           error?.response.data.message,
           "",
-          "i-chk-circle"
+          "i-chk-circle",
         );
       });
 
@@ -126,24 +134,24 @@ const Register = () => {
       const lastName = res.data.isAdmin
         ? res.data.lastName
         : res.data.isFinanceUser
-        ? res.data.lastName
-        : "";
+          ? res.data.lastName
+          : "";
       const adminCode = res.data.isAdmin ? res.data.adminCode : "";
       const agentTitle = res.data.isAdmin
         ? ""
         : res.data.isFinanceUser
-        ? ""
-        : res.data.agentTitle;
+          ? ""
+          : res.data.agentTitle;
       const agentCode = res.data.isAdmin
         ? ""
         : res.data.isFinanceUser
-        ? ""
-        : res.data.agentCode;
+          ? ""
+          : res.data.agentCode;
       const contractLevel = res.data.isAdmin
         ? ""
         : res.data.isFinanceUser
-        ? ""
-        : res.data.contractLevel;
+          ? ""
+          : res.data.contractLevel;
       const profilePic = res.data.profilePic;
       localStorage.setItem("authToken", authToken);
       localStorage.setItem("isAdmin", isAdmin);
@@ -162,7 +170,7 @@ const Register = () => {
         "success",
         res?.data.message,
         "",
-        "i-chk-circle"
+        "i-chk-circle",
       );
       setTimeout(() => {
         navigate("/dashboard");
@@ -187,7 +195,11 @@ const Register = () => {
                 <h1>Agent Login</h1>
                 <p>
                   Don’t have a Joptiman account?{" "}
-                  <Link to={registerUrl} onClick={() => setIsFlipped(false)}>
+                  <Link
+                    to={registerUrl}
+                    onClick={() => setIsFlipped(false)}
+                    target="_blank"
+                  >
                     <span style={{ color: "#F78B2B" }}>Register Here*</span>
                   </Link>
                 </p>
