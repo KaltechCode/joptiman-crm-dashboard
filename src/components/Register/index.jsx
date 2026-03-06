@@ -102,14 +102,14 @@ const Register = () => {
     dispatch(showLoader());
     const res = await httpClient
       // the correct code for sending login resquest
-      // .post("/user/login", userCredentials)
+      .post("/user/login", userCredentials)
 
       // Code to prevent from login
-      .post("user/login", {
-        password: userCredentials.password,
-        email: "joptimazzz@gmail.com",
-        OTP: userCredentials.OTP,
-      })
+      // .post("user/login", {
+      //   password: userCredentials.password,
+      //   email: "joptimazzz@gmail.com",
+      //   OTP: userCredentials.OTP,
+      // })
       .catch((error) => {
         dispatch(hideLoader());
         snackbar_Ref.current.showMessage(

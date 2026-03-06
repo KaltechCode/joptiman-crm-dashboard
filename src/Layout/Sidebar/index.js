@@ -20,6 +20,8 @@ import LogoutIcon from "../../assets/Logout.png";
 import rightArrow from "../../assets/right-arrow.png";
 import agentIcon from "../../assets/Agent.png";
 import goHighLevel from "../../assets/GHL.png";
+import { MdOutlineContactSupport } from "react-icons/md";
+
 import { useDispatch, useSelector } from "react-redux";
 import { useLocation, useNavigate } from "react-router-dom";
 import { hideLoader, showLoader } from "../../Store/mainSlice";
@@ -88,6 +90,10 @@ const SideBar = () => {
       path: "/tutorials",
     },
     {
+      name: "IT Support",
+      path: "https://www.joptimanconsultancy.com/technical-support",
+    },
+    {
       icon: LogoutIcon,
       name: "Logout",
       path: "https://www.joptimanconsultancy.com/",
@@ -128,8 +134,8 @@ const SideBar = () => {
                   display: isAdmin
                     ? "block"
                     : isFinanceUser
-                    ? "block"
-                    : "block",
+                      ? "block"
+                      : "block",
 
                   // The following code was commented to make the sidebar visible to both isAdmin and isFinancialUser role
 
@@ -164,7 +170,11 @@ const SideBar = () => {
                       minWidth: "30px !important",
                     }}
                   >
-                    <img src={menu.icon} />
+                    {menu.name == "IT Support" ? (
+                      <MdOutlineContactSupport />
+                    ) : (
+                      <img src={menu.icon} />
+                    )}
                   </ListItemIcon>
                   <ListItemText
                     className="list-item-text"

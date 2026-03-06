@@ -81,7 +81,7 @@ const Dashboard = () => {
   const currentYear = currentDate.getFullYear();
   const CurrentMonth = currentDate.getMonth() + 1;
   const currentMonthName = monthNames.find(
-    (m) => m.index === CurrentMonth
+    (m) => m.index === CurrentMonth,
   ).name;
   const [year, setYear] = useState(currentYear);
   const [month, setMonth] = useState(currentMonthName);
@@ -118,7 +118,7 @@ const Dashboard = () => {
   ] = useState(0);
   const [selectedOption, setSelectedOption] = useState("Productivity Matrix");
   const [yearlyPolicySelectedOption, setYearlyPolicySelectedOption] = useState(
-    "Productivity Matrix"
+    "Productivity Matrix",
   );
   const [totalNoOfRecruits, setTotalNoOfRecruits] = useState();
   const [previousYears, setPreviousYears] = useState([]);
@@ -174,7 +174,7 @@ const Dashboard = () => {
           "error",
           error?.response.data.message,
           "",
-          "i-chk-circle"
+          "i-chk-circle",
         );
       });
 
@@ -193,7 +193,7 @@ const Dashboard = () => {
           "error",
           error?.response.data.message,
           "",
-          "i-chk-circle"
+          "i-chk-circle",
         );
       });
 
@@ -210,8 +210,8 @@ const Dashboard = () => {
         isAdmin
           ? `/dashboard/getMonthlyPolicyData/${month}`
           : isFinanceUser
-          ? `/dashboard/getMonthlyPolicyData/${month}`
-          : `/dashboard/getMonthlyPolicyDataAgentView/${month}`
+            ? `/dashboard/getMonthlyPolicyData/${month}`
+            : `/dashboard/getMonthlyPolicyDataAgentView/${month}`,
       )
       .catch((error) => {
         dispatch(hideLoader());
@@ -219,7 +219,7 @@ const Dashboard = () => {
           "error",
           error?.response.data.message,
           "",
-          "i-chk-circle"
+          "i-chk-circle",
         );
       });
 
@@ -252,8 +252,8 @@ const Dashboard = () => {
         isAdmin
           ? `/dashboard/getMatrixData/${year}`
           : isFinanceUser
-          ? `/dashboard/getMatrixData/${year}`
-          : `/dashboard/getMatrixDataAgentView/${year}`
+            ? `/dashboard/getMatrixData/${year}`
+            : `/dashboard/getMatrixDataAgentView/${year}`,
       )
       .catch((error) => {
         dispatch(hideLoader());
@@ -261,7 +261,7 @@ const Dashboard = () => {
           "error",
           error?.response.data.message,
           "",
-          "i-chk-circle"
+          "i-chk-circle",
         );
       });
 
@@ -292,7 +292,7 @@ const Dashboard = () => {
           "error",
           error?.response.data.message,
           "",
-          "i-chk-circle"
+          "i-chk-circle",
         );
       });
     if (res?.status === 200) {
@@ -312,7 +312,7 @@ const Dashboard = () => {
           "error",
           error?.response.data.message,
           "",
-          "i-chk-circle"
+          "i-chk-circle",
         );
       });
     if (res?.status === 200) {
@@ -332,7 +332,7 @@ const Dashboard = () => {
           "error",
           error?.response.data.message,
           "",
-          "i-chk-circle"
+          "i-chk-circle",
         );
       });
 
@@ -629,14 +629,14 @@ const Dashboard = () => {
                         {yearlyPolicySelectedOption === "Policy Matrix"
                           ? "Policies:"
                           : yearlyPolicySelectedOption === "Cash Flow Matrix"
-                          ? "Cash Flow:"
-                          : yearlyPolicySelectedOption === "Health Insurance"
-                          ? "Health Policies:"
-                          : yearlyPolicySelectedOption === "Life Insurance"
-                          ? "Life Policies:"
-                          : yearlyPolicySelectedOption === "Annuities"
-                          ? "Annuities:"
-                          : "Sales:"}
+                            ? "Cash Flow:"
+                            : yearlyPolicySelectedOption === "Health Insurance"
+                              ? "Health Policies:"
+                              : yearlyPolicySelectedOption === "Life Insurance"
+                                ? "Life Policies:"
+                                : yearlyPolicySelectedOption === "Annuities"
+                                  ? "Annuities:"
+                                  : "Sales:"}
                       </b>
                     </Box>
                   </div>
