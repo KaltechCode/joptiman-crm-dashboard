@@ -489,7 +489,7 @@ const Dashboard = () => {
                   <div className="list-items-container">
                     <div className="list-items">
                       <div className="list-items">
-                        <p className="list-items-text">Health Insurance</p>
+                        <p className="list-items-text">Annuities</p>
                       </div>
                       <div className="list-items">
                         {selectedOption === "Policy Matrix" ? (
