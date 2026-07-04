@@ -66,7 +66,7 @@ const Notifications = (props) => {
             status: notifications.status,
             unRead: notifications.unRead,
             newAgentId: notifications.newAgentId,
-          }))
+          })),
         );
         setNoOfUnReadNotifications(res.data.noOfUnReadNotification);
       }
@@ -87,7 +87,7 @@ const Notifications = (props) => {
             status: notifications.status,
             unRead: notifications.unRead,
             newAgentId: notifications.newAgentId,
-          }))
+          })),
         );
         setNoOfUnReadNotifications(res.data.noOfUnReadNotification);
       }
@@ -106,7 +106,7 @@ const Notifications = (props) => {
             status: notifications.status,
             unRead: notifications.unRead,
             newAgentId: notifications.newAgentId,
-          }))
+          })),
         );
         setNoOfUnReadNotifications(res.data.noOfUnReadNotification);
       }
@@ -150,6 +150,7 @@ const Notifications = (props) => {
           sx={{
             width: "100%",
             height: "70px",
+            background: "red",
           }}
           className="notification-popup"
         >
@@ -181,7 +182,7 @@ const Notifications = (props) => {
                       handleOptionChange(
                         item.policyNumber,
                         item.id,
-                        item.newAgentId
+                        item.newAgentId,
                       )
                     }
                   >

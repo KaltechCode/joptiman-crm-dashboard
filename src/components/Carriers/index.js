@@ -10,7 +10,7 @@ import Carrier4 from "../../assets/Carrier 4.png";
 import Carrier5 from "../../assets/Carrier5.png";
 import Carrier6 from "../../assets/Carrier 6.png";
 import Carrier7 from "../../assets/Carrier 7.png";
-import Carrier8 from "../../assets/Carrier8.png";
+import Carrier8 from "../../assets/NAUSSAU.png";
 import Carrier9 from "../../assets/carrier9.png";
 import UnitedHealthCare from "../../assets/United HealthCare.png";
 import LSPN from "../../assets/LSPNPic.png";
@@ -68,10 +68,7 @@ const Carriers = () => {
                   "https://accounts.hioscar.com/account/login/?client_context=business"
                 }
               />
-              <CarriersItems
-                carrierPic={Carrier8}
-                url={"https://www.aetna.com/insurance-producer.html"}
-              />
+              <CarriersItems carrierPic={Carrier8} url={"https://nfg.com/"} />
               <CarriersItems
                 carrierPic={Carrier9}
                 url={"https://www.bcbstx.com/producer"}

@@ -5,6 +5,7 @@ import Notifications from "./Notification/Notifications";
 import Logo from "../../assets/JOptimanlogo.png";
 import httpClient from "../../_util/api";
 import ToggleSidebar from "./ToogleSidebar";
+import DuplicateNotification from "./Notification/DuplicateNotification";
 
 const Header = () => {
   // const isAdmin = JSON.parse(localStorage.getItem('isAdmin'))
@@ -102,7 +103,8 @@ const Header = () => {
                 </div>
               </Stack>
 
-              <Notifications />
+              {/* <Notifications /> */}
+              <DuplicateNotification />
             </Stack>
 
             <Profile />

@@ -142,7 +142,7 @@ const AddNewPolicy_Agent = () => {
     "NationWide",
     "NorthAmerican",
     "Oscar",
-    "Aetna",
+    "NAUSSAU",
     "BlueCross BlueShield",
     "United Healthcare",
     "LSPN",
