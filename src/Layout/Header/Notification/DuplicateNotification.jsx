@@ -112,6 +112,15 @@ function DuplicateNotification() {
     }
   };
 
+  const notif = [
+    "we'll create one reusable wrapper that every homepage section uses. ",
+    "This keeps the storefront visually consistent and makes future sections much faster to build.",
+    "we'll create one reusable wrapper that every homepage section uses.",
+    "This keeps the storefront visually consistent and makes future sections much faster to build.",
+    "we'll create one reusable wrapper that every homepage section uses.",
+    "This keeps the storefront visually consistent and makes future sections much faster to build.",
+  ];
+
   useEffect(() => {
     getNotifications();
   }, []);
@@ -161,62 +170,41 @@ function DuplicateNotification() {
       {open && (
         <div className="notification-popUp">
           <div className="notification-container">
-            {notifications?.length > 0 ? (
-              notifications
-                .slice()
-                .reverse()
-                .map((item, index) => {
-                  return (
-                    <Stack
-                      className="menu-item"
-                      alignItems={"center"}
-                      justifyContent={"center"}
-                      sx={{
-                        display: "flex",
-                        flexWrap: "wrap",
-                        margin: "2px",
-                        width: "100%",
-                        height: "8vh",
-                        backgroundColor: item.unRead ? "#F08613" : "#DADADA",
-                        borderRadius: "13px",
-                        "&:hover": {
-                          backgroundColor: item.unRead ? "#F08613" : "#DADADA",
-                          cursor: "pointer",
-                        },
-                      }}
-                      key={index}
-                      onClick={() =>
-                        handleOptionChange(
-                          item.policyNumber,
-                          item.id,
-                          item.newAgentId,
-                        )
-                      }
-                    >
-                      <Stack
-                        alignItems={"center"}
-                        justifyContent={"center"}
-                        sx={{ width: "85%" }}
+            <div className="notification-content-container hide-scrollbar">
+              {notifications?.length > 0 ? (
+                notifications
+                  .slice()
+                  .reverse()
+                  .map((item, index) => {
+                    return (
+                      <div
+                        className=""
+                        key={index}
+                        onClick={() =>
+                          handleOptionChange(
+                            item.policyNumber,
+                            item.id,
+                            item.newAgentId,
+                          )
+                        }
                       >
-                        <Typography sx={{ fontSize: "14px" }}>
-                          {item.message}
-                        </Typography>
-                      </Stack>
-                    </Stack>
-                  );
-                })
-            ) : (
-              <p
-                style={{
-                  color: "#111",
-                  fontSize: "24px",
-                  textAlign: "center",
-                  fontWeight: "bold",
-                }}
-              >
-                No Notifications Available
-              </p>
-            )}
+                        <p className="notificationText">{item.message}</p>
+                      </div>
+                    );
+                  })
+              ) : (
+                <p
+                  style={{
+                    color: "#111",
+                    fontSize: "24px",
+                    textAlign: "center",
+                    fontWeight: "bold",
+                  }}
+                >
+                  No Notifications Available
+                </p>
+              )}
+            </div>
             <div className="notification-close" onClick={handleClose}>
               <CloseIcon sx={{ color: "black", fontSize: "25px" }} />
             </div>
