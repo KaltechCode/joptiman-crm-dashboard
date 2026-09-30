@@ -2,8 +2,10 @@
 
 set -e
 
-echo "Starting deployment..."
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
+nvm use 22
 
 echo "Installing dependencies..."
 npm install
@@ -11,6 +13,9 @@ npm install
 echo "Building React application..."
 npm run build
 
-echo "React build completed successfully."
+echo "Deploying dist files..."
+
+rm -rf /home/USERNAME/public_html/*
+cp -r dist/* /home/USERNAME/public_html/
 
 echo "Deployment completed successfully."
