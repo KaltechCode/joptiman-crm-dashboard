@@ -23,6 +23,7 @@ import AdminAccount from "../components/Account/AdminAccount";
 import Tutorial from "../components/Tutorial";
 import Register from "../components/Register";
 import ForgetPasswordPage from "../components/forgetPassword/forgetPassword";
+import TechnicalSupport from "../shared-component/technicalSupport";
 import AddNewRecruitPage from "../components/Add-New-Agent/Add-New-Agent";
 
 const AppRouter = () => {
@@ -65,6 +66,7 @@ const AppRouter = () => {
           <Route path="/recruits" element={<Recruits />}></Route>
           <Route path="/agent" element={<Agents />}></Route>
           <Route path="/tutorials" element={<Tutorial />}></Route>
+          <Route path="/technical-support" element={<TechnicalSupport />}></Route>
           <Route path="/addNewRecruit" element={<AddNewRecruit />}></Route>
           <Route path="/addNewRecruit/:_id" element={<AddNewRecruit />}></Route>
           <Route path="/addAgent" element={<AddNewAgent />}></Route>

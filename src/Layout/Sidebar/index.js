@@ -91,7 +91,7 @@ const SideBar = () => {
     },
     {
       name: "IT Support",
-      path: "https://www.joptimanconsultancy.com/technical-support",
+      path: "/technical-support",
     },
     {
       icon: LogoutIcon,
@@ -152,7 +152,14 @@ const SideBar = () => {
                 }}
               >
                 <ListItemButton
-                  href={menu.path}
+                  href={isExternal ? menu.path : undefined}
+                  onClick={
+                    menu.name === "Logout"
+                      ? logoutHandler
+                      : isExternal
+                        ? undefined
+                        : () => navigate(menu.path)
+                  }
                   sx={{
                     backgroundColor: isActive ? "#1D9EB0" : "white", // green when active
                     height: "5vh",
@@ -161,7 +168,6 @@ const SideBar = () => {
                       backgroundColor: isActive ? "#1D9EB0" : "#F08613",
                     },
                   }}
-                  onClick={menu.name === "Logout" ? logoutHandler : undefined}
                 >
                   <ListItemIcon
                     className="list-item-icon1"
