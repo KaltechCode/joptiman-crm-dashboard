@@ -3,14 +3,14 @@
 set -e
 
 echo "Installing dependencies..."
-npm install
+npm install --legacy-peer-deps
 
 echo "Building React application..."
 npm run build
 
-echo "Deploying dist files..."
+echo "Deploying build files..."
 
 rm -rf /home/USERNAME/public_html/*
-cp -r dist/* /home/USERNAME/public_html/
+cp -r build/* /home/USERNAME/public_html/
 
 echo "Deployment completed successfully."
